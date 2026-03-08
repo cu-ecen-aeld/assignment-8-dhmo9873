@@ -1,0 +1,1 @@
+savedcmd_/home/aesd/AESD/assignment-1-dhmo9873/aesd-char-driver/aesdchar.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/aesd/AESD/assignment-1-dhmo9873/aesd-char-driver/aesdchar.ko /home/aesd/AESD/assignment-1-dhmo9873/aesd-char-driver/aesdchar.o /home/aesd/AESD/assignment-1-dhmo9873/aesd-char-driver/aesdchar.mod.o
