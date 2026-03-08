@@ -14,8 +14,8 @@ S = "${WORKDIR}/git/aesd-char-driver"
 # This magic line handles the cross-compilation against the target kernel headers
 inherit module
 
-# This ensures the driver is packaged into the image
-FILES:${PN} += "${base_libdir}/modules/${KERNEL_VERSION}/extra/aesdchar.ko"
+RPROVIDES:${PN} += "kernel-module-aesdchar"
+RDEPENDS:${PN} += "kernel-module-aesdchar"
 
 FILES:${PN} += "${bindir}/aesdchar_load ${bindir}/aesdchar_unload"
 
