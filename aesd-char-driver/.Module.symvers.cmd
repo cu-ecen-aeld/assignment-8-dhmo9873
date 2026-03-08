@@ -1,1 +1,0 @@
-savedcmd_/home/aesd/AESD/assignment-1-dhmo9873/aesd-char-driver/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/aesd/AESD/assignment-1-dhmo9873/aesd-char-driver/Module.symvers -T /home/aesd/AESD/assignment-1-dhmo9873/aesd-char-driver/modules.order -i Module.symvers -e 
