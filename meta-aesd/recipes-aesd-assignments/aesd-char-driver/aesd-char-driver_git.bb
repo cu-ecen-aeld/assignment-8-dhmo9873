@@ -6,17 +6,10 @@ SRC_URI = "git://git@github.com/cu-ecen-aeld/assignment3-dhmo9873.git;protocol=s
 
 # Update these to match your latest commit and versioning
 PV = "1.0+git${SRCPV}"
-SRCREV = "098135f940d98879c2b718f865f44f04e83b82c2"
+SRCREV = "${AUTOREV}"
 
 # Set the source directory to the sub-folder containing the driver code
 S = "${WORKDIR}/git/aesd-char-driver"
 
 # This magic line handles the cross-compilation against the target kernel headers
 inherit module
-
-INITSCRIPT_PACKAGES = "${PN}"
-INITSCRIPT_NAME:${PN} = "aesdchar-start-stop"
-INITSCRIPT_PARAMS = "defaults 97"
-
-FILES:${PN} += "${base_libdir}/modules/${KERNEL_VERSION}/extra/aesdchar.ko"
-
