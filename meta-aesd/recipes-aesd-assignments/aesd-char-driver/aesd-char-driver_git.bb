@@ -6,7 +6,7 @@ SRC_URI = "git://git@github.com/cu-ecen-aeld/assignment3-dhmo9873.git;protocol=s
 
 # Update these to match your latest commit and versioning
 PV = "1.0+git${SRCPV}"
-SRCREV = "${AUTOREV}"
+SRCREV = "0bb40f19117b139137c4beba4233c0b327854c0a"
 
 # Set the source directory to the sub-folder containing the driver code
 S = "${WORKDIR}/git/aesd-char-driver"
